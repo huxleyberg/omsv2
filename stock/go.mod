@@ -1,3 +1,3 @@
-module github.com/huxleyberg/omsv2/stock
+module github.com/huxleyberg/omsv2-stock
 
 go 1.22.3
