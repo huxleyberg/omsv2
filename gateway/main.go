@@ -6,10 +6,12 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	common "github.com/huxleyberg/omsv2-commons"
+	_ "github.com/joho/godotenv/autoload"
 )
 
-const (
-	httpAddr = ":8080"
+var (
+	httpAddr = common.EnvString("HTTP_ADDR", ":8080")
 )
 
 func main() {
